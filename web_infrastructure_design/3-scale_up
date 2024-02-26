@@ -1,0 +1,14 @@
+
+
+                                                         ______________
+             8.8.8.8                                     | HTTPS      |
+DNS Server <---------> User <--> Firewall -- Firewall -- | Server     | -- firewall -- Web server -- firewall -- Web server -- firewall -- Web server
+           foobar.com             |                      | IP 8.8.8.8 |                    |                        |                         |
+                                 Firewall                |____________|                    |                        |                         |
+                                  |                            |                           |                        |                         |
+                                  |                            |---------Sumologic---------|                        |------Sumologic----------|
+                                  |                      ______|_______                    |                        |                         |
+                                  |                      | HTTPS      |                    |                        |                         |
+                                  |----------------------| Server     | -- firewall -- Web server -- firewall -- Web server -- firewall -- Web server
+                                                         | IP 8.8.8.8 |
+                                                         |____________|
